@@ -6,8 +6,8 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="/users/<%=current_user.id%>/gossips">Index <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link active" href="/users/<%=current_user.id%>/gossips/new">Create a gossip <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link active" href="/users/<%=session[:user_id]%>/gossips">Index <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link active" href="/users/<%=session[:user_id]%>/gossips/new">Create a gossip <span class="sr-only">(current)</span></a>
       <a class="nav-item nav-link" href="/team">Team</a>
       <a class="nav-item nav-link" href="/contact">Contact</a>
       <a class="nav-item nav-link" href="/users/new">Sign up</a>
