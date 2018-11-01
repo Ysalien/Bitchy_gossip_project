@@ -1,24 +1,8 @@
-# README
+https://gossip-project062.herokuapp.com/
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Site fait en pair-programming avec Arthur Mansuy
 
-Things you may want to cover:
+L'app du dessous a été pushé sur heroku mais a eu full bug (encore bloqué à l'heure actuelle), sur le lien suivant : https://the-bitchy-gossip-project.herokuapp.com/
 
-* Ruby version
+Je n'ai pas aimé du tout faire ce projet ça m'a rendu folle
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
