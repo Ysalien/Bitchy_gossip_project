@@ -1,0 +1,96 @@
+/* Body (police, liens, titres, etc.) */
+body {
+  background-image: linear-gradient(-90deg, #ffcccc,#ddccff, #ffcccc);
+}
+
+p {
+  font-family: URW Gothic L, Avantgarde, TeX Gyre Adventor, sans-serif;
+  padding-left: 20px;
+}
+
+.title {
+  font-family: URW Gothic L, Avantgarde, TeX Gyre Adventor, sans-serif;
+  font-variant: small-caps;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.welcome {
+  font-family: URW Gothic L, Avantgarde, TeX Gyre Adventor, sans-serif;
+  font-variant: small-caps;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.backhome {
+  display: flex;
+  justify-content: center;
+}
+
+.flash {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15px;
+  font-family: URW Gothic L, Avantgarde, TeX Gyre Adventor, sans-serif;
+}
+
+/* Liens */
+a {
+	text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #ff0055!important;
+}
+
+a:link {
+	color: #ff0066;
+}
+
+.linko {
+  color: black;
+}
+
+/* Pour les commentaires */
+.card-comment {
+  display: flex;
+  justify-content: center;
+}
+
+.form-comment {
+  display: flex;
+  justify-content: center;
+}
+
+/* La navbar */
+.navbar {
+  font-size: 14px;
+  font-family: Arial;
+}
+
+.navbar-brand {
+  font-family: URW Gothic L, Avantgarde, TeX Gyre Adventor, sans-serif;
+  font-variant: small-caps;
+}
+
+/* Les cardbox pour la présentation des gossips */
+
+.cardbox {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.card-header {
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+.card-time {
+  font-size: 10px;
+}

@@ -1,0 +1,13 @@
+<div class="card-comment">
+<div class="card w-50">
+  <div class="card-body">
+    <h5 class="card-title"><%= comment.anonymous_commentor %></h5>
+    <p class="card-text"><%= comment.content %></p>
+    <p><%= comment.created_at %><p>
+    <p><%= comment.updated_at %><p>
+    <a href="<%= edit_user_gossip_comment_path(@gossip.id, comment.id)%>" class="btn btn-primary">Edit</a>
+    <a href="<%= user_gossip_comment_path(@gossip.id,comment.id)%>" class="btn btn-danger" data-confirm="Are you sure ?" data-method="DELETE">Delete</a>
+  </div>
+</div>
+</div>
+<br>

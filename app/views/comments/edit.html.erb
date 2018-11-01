@@ -1,0 +1,9 @@
+<h1 class="title">Rectification</h1>
+
+<div class="formulaire">
+<%= form_for [@gossip, @comment] do |f| %>
+  <p>Updated  : <br> <%= f.text_area :content %></p>
+  <p>By : <br> <%= f.text_field :anonymous_commentor %></p>
+  <%= f.submit %>
+<% end %>
+</div>

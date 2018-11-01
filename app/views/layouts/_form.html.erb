@@ -1,0 +1,7 @@
+<div class="form-comment">
+<%= form_for ([@user, @gossip, @gossip.comments.build]) do |f| %>
+  <p>Ton commentaire  : <br> <%= f.text_area :content %></p>
+  <p>De : <br> <%= f.text_field :anonymous_commentor %></p>
+  <%= f.submit %>
+<% end %>
+</div>

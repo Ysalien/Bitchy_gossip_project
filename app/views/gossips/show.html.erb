@@ -1,0 +1,29 @@
+
+<div class="cardbox">
+<div class="card border-light mb-3" style="max-width: 18rem;">
+  <div class="card-header">Gossip n°<%= @gossip.id%></div>
+  <div class="card-body">
+    <h5 class="card-title"><%= @gossip.title %></h5>
+    <p class="card-text"><%= @gossip.content%></p>
+    <p class="card-text"><%= @gossip.anonymous_gossiper%></p>
+    <p class="card-time"><%= @gossip.created_at%></p>
+    <p class="card-time"><%= @gossip.updated_at %></p>
+    <p>Comments (<%= @gossip.comments.size %>)</p>
+    <p><%= @gossip.likes.count %> <%= (@gossip.likes.count) == 1 ? 'Like' : 'Likes'%></p>
+    <a href="/users/<%=current_user.id%>/gossips/<%=@gossip.id%>/edit" class="btn btn-primary">Edit</a>
+    <a href="<%=user_gossip_path(session[:user_id], @gossip.id)%>" class="btn btn-danger" data-confirm="Are you sure ?" data-method="DELETE">Delete</a>
+  </div>
+</div>
+</div>
+<p class="backhome"><a href="/">🔙</a></p>
+
+<h1 class="title">Comments</h1>
+
+<%= render partial: 'gossips/comment', collection: @gossip.comments.reverse %>
+<!-- Display les commentaires depuis mon partial _comment.html.erb depuis la collection @gossip.comments
+le reverse est pour faire du plus récent au plus ancien -->
+
+
+<h1 class="title">Add a comment</h1>
+
+<%= render partial: 'layouts/form' %> <!-- Mon formulaire pour ajouter un comment -->

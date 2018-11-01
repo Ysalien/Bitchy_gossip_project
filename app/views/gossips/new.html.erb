@@ -1,0 +1,13 @@
+<h1 class="title">Tell me</h1>
+
+<%= form_for @gossip, url: {action: "create"} do |f| %>
+<div class="form-group">
+    <%= f.text_field :title, placeholder: 'Title', class: "form-control" %>
+</div>
+<div class="form-group">
+<%= f.text_area :content, placeholder: 'Gossip', class: "form-control" %>
+</div>
+<div class="form-group">
+    <button class ="btn btn-outline-dark" type="submit">Create</button>
+</div>
+<% end %>
