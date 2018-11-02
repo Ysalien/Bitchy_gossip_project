@@ -1,8 +1,7 @@
-https://gossip-project062.herokuapp.com/
+##### Bitchy Gossip Project
 
-Site fait en pair-programming avec Arthur Mansuy
+Après full bug, voici mon lien pour mon site de bitchy gossip : https://the-bitchy-gossip-project.herokuapp.com/
+Tout ne marche pas, mais c'est en bonne voie. Normalement on peut sign up, se log, commenter...
 
-L'app du dessous a été pushé sur heroku mais a eu full bug (encore bloqué à l'heure actuelle), sur le lien suivant : https://the-bitchy-gossip-project.herokuapp.com/
-
-Je n'ai pas aimé du tout faire ce projet ça m'a rendu folle
+Sinon, le projet a été fait en pair-programming avec toute la team de Nice et en particulier Arthur Mansuy (https://gossip-project062.herokuapp.com/). Coeur sur lui pour avoir supporté mes plantages successifs.
 
