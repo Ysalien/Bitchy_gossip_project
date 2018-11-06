@@ -1,3 +1,5 @@
+<% if logged_in? %>
+
 <h1 class="title">Tell me</h1>
 
 <%= form_for @gossip, url: {action: "create"} do |f| %>
@@ -11,3 +13,9 @@
     <button class ="btn btn-outline-dark" type="submit">Create</button>
 </div>
 <% end %>
+
+<%else%>
+
+<p> If you want to write a gossip, sign now ! </p>
+
+<%end%>

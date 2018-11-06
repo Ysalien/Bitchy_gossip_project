@@ -1,18 +1,16 @@
-<h3>Connexion</h3>
+<h1>Sign up</h1>
 
-<div class="col-md-6 col-md-offset-3">
-    <%= form_for(@user) do |f| %>
-      <%= f.label :username %>
-      <%= f.text_field :username %>
-
-      <%= f.label :email %>
-      <%= f.email_field :email %>
-
-      <%= f.label :password %>
-      <%= f.password_field :password %>
-
-      <%= f.submit "Create my account", class: "btn btn-primary" %>
-    <% end %>
-  </div>
+<h2 class="text-center margin-header">Create a new user :</h2>
+<div class="container margin-header">
+	<%= form_for(@user, url: signup_path) do |f| %>
+		<strong><%= f.label :email %></strong><br />
+		<%= f.email_field :email, placeholder: "Your email" %>
+    <strong><%= f.label :password %></strong><br />
+		<%= f.password_field :password, placeholder: "Your password" %>
+		<strong><%= f.label :password_confirmation %></strong><br />
+		<%= f.password_field :password_confirmation, placeholder: "Confirm your password", size: "60x10" %>
+		<%= f.submit "Submit" %>
+	<% end %>
+</div>
 
 <a href="/">Back</a>

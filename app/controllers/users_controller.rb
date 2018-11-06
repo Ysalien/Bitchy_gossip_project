@@ -5,18 +5,19 @@ class UsersController < ApplicationController
   end
 
   def create
-      @user = User.new(user_params)
-      if @user.save
-        flash[:success] = "Welcome to The Gossip Project!"
-        redirect_to '/'
-      else
-        render 'new'
-      end
+    @user = User.new(params_users)
+    if @user.save
+    flash[:success] = "Successfully created on website!"
+    redirect_to '/'
+    else
+    flash[:danger] = "Error"
+    render 'new'
+    end
   end
 
   private
-    def user_params
-      params.require(:user).permit(:username, :email, :password)
-    end
+  def params_users
+    params.require(:user).permit(:username, :email, :password, :password_confirmation)
+  end
 
 end

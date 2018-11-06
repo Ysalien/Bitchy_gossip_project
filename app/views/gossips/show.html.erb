@@ -1,3 +1,4 @@
+<% if logged_in? %>
 
 <div class="cardbox">
 <div class="card border-light mb-3" style="max-width: 18rem;">
@@ -27,3 +28,9 @@ le reverse est pour faire du plus récent au plus ancien -->
 <h1 class="title">Add a comment</h1>
 
 <%= render partial: 'layouts/form' %> <!-- Mon formulaire pour ajouter un comment -->
+
+<% else %>
+
+<p> Need to sign if you want to check this out </p>
+
+<%end%>

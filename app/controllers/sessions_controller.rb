@@ -1,23 +1,21 @@
 class SessionsController < ApplicationController
 
-  def new
-  end
-
   def create
     user = User.find_by(email: params[:session][:email].downcase)
     if user && user.authenticate(params[:session][:password])
       flash[:success] = "Logged in"
-      redirect_to user
+      log_in user #use method from helpers - temporary cookie
+      redirect_to '/'
     else
-       flash[:danger] = 'Invalid email/password combination'
+       flash[:danger] = 'Invalid email or password combination'
       render 'new'
     end
   end
 
-  def destroy
-    session.delete(:user_id)
-    @current_user = nil
-    redirect_to root_url
-  end
+    def destroy
+      log_out if logged_in? #method from helpers
+      flash[:success] = 'Logged out'
+      redirect_to '/'
+    end
 
 end
