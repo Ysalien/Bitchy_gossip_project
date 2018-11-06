@@ -4,7 +4,7 @@
 <div class="container margin-header">
 	<%= form_for(@user, url: signup_path) do |f| %>
 		<strong><%= f.label :username %></strong><br>
-		<%= f.email_field :username, placeholder: "Your name" %><br><br>
+		<%= f.text_field :username, placeholder: "Your name" %><br><br>
 		<strong><%= f.label :email %></strong><br>
 		<%= f.email_field :email, placeholder: "Your email" %><br><br>
     <strong><%= f.label :password %></strong><br>
