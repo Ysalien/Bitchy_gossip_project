@@ -12,9 +12,8 @@ Rails.application.routes.draw do
   resources :users
   resources :sessions
 
-  resources :gossips do
+  resources :gossips
   resources :comments
   resources :likes
-  end
 
 end

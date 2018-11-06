@@ -2,7 +2,6 @@ class GossipsController < ApplicationController
 
   def index
     @gossip = Gossip.all
-    @user = User.find(params[:user_id])
   end
 
   def new
