@@ -5,7 +5,7 @@
 <% @gossip.each do |gossip, index| %>
 <div class="cardbox">
 <div class="card border-light mb-3" style="max-width: 18rem;">
-  <div class="card-header"><a href="/users/<%=session[:user_id]%>/gossips/<%=gossip.id%>" class="linko">Gossip n°<%= gossip.id%></a></div>
+  <div class="card-header"><a href="/gossips/<%=gossip.id%>" class="linko">Gossip n°<%= gossip.id%></a></div>
   <div class="card-body">
     <h5 class="card-title"><%= gossip.title %></h5>
     <p class="card-text"><%= gossip.content%></p>
